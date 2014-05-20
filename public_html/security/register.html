@@ -1,0 +1,27 @@
+<div class="container">
+  <form class="form-signin" onsubmit="return false" role="form">
+    <h2 class="form-signin-heading">Registrera</h2>
+    <span>Fyll i formuläret för att registrera dig som ny användare!</span>
+    <div class="input-group merged">
+      <span class="input-group-addon">
+        <span class=" glyphicon glyphicon-user"></span>
+      </span>
+      <input type="username" class="form-control" placeholder="Användarnamn"  autofocus="" />
+    </div>
+    <div class="input-group merged">
+      <span class="input-group-addon">
+        <span class=" glyphicon glyphicon-lock"></span> 
+      </span>
+      <input type="password" class="form-control" placeholder="Lösenord" ></input>
+    </div>
+    <div class="input-group merged">
+      <span class="input-group-addon">
+        <span class="glyphicon glyphicon-envelope"></span> 
+      </span>
+      <input type="email" class="form-control" placeholder="Email" ></input>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Klart!</button>
+    <p id="registerError"></p>
+  </form>
+</div>
+<script src="security/passport.js" />

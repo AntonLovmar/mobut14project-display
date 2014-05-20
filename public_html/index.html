@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-title" content="Cool maps">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="viewport" content="width=320.1">
+  <link href="http://advancedtele.com/wp-content/uploads/2012/11/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="security/signin.css" />
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-title" content="Cool maps">
+  <!--Bootstrap! :)-->
+  
+</head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" onclick="pageloader.loadMainPage()">FncyRestaurantGuide</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul id="functions" class="nav navbar-nav navbar-left">
+          </ul>
+          <ul id="util" class="nav navbar-nav navbar-right">
+           <li id="userInfo"></li>
+         </ul>
+       </div><!--/.navbar-collapse -->
+     </div>
+
+   </div>
+   <div id="searchField" class="container" style="display:none">
+    <div class="form-group">
+      <div class="input-group search-field">
+        <input type="text" class="form-control" id="searchTerm" placeholder="Restaurang">
+        <span class="input-group-btn">
+          <button id="searchBtn" class="btn btn-default" type="button">Sök!</button>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div id="mainContent">
+    <div class="container">
+      <h3 class="main-loader">Laddar in...</h3>
+
+    </div>
+  </div> 
+  <div class="container">
+   <hr />
+   <footer>
+    <p>© fncyBtn 2014</p>
+  </footer>
+</div>
+<!-- Placed at the end of the document so the pages load faster -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src ="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="js/CBHelper/md5.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/CBHelper/json.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/CBHelper/CBXMLHttpRequest.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/CBHelper/CBHelper.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/CBHelper/platforms/GenericHelper.js"></script>
+<script type="text/javascript" charset="utf-8" src="rater.js"></script>
+<script type="text/javascript" charset="utf-8" src="navigation/pageloader.js"></script>
+<script src="utils/favorites/favorites.js"></script>
+<script src="restaurants/restaurants.js"></script>
+<script src="restaurants/search.js"></script>
+<script src="http://igniteui.com/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/infragistics.core.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/infragistics.lob.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/infragistics.dv.js"></script>
+<link href="http://cdn-na.infragistics.com/igniteui/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="restaurants/tagit.css" rel="stylesheet"><link>
+<script src="restaurants/tag-it.min.js"></script>
+<link href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/infragistics.css" rel="stylesheet"></link>
+
+<script>
+</script>
+<script>
+  pageloader.loadLoginPage();
+  $(document).click(function(event) {
+    if($('.navbar-collapse').hasClass('in'))
+      $('.navbar-collapse').collapse('hide');
+  });
+  $(document).ready(function () {
+      $('.ui-igtrialwatermark').remove();
+  });
+</script>
+</body>
+</html>

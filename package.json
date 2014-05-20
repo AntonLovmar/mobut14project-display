@@ -1,0 +1,12 @@
+{"name": "restaurantGuide",
+  "description": "guide for restaurant",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.4.7",
+    "connect-redis": "~1.4.6",
+    "redis": "~0.10.0",
+    "sweetcaptcha": "0.0.2"
+  }
+}
+
